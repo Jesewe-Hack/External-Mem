@@ -7,5 +7,7 @@ if you want to use wallhack, press 1, and if radar, then 2
 
 ### Error List
 ERROR: Failed to import modules...
+
 ERROR: you entered an invalid character!
+
 ERROR: csgo.exe process is not running!
