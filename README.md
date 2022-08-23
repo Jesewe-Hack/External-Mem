@@ -1,5 +1,5 @@
 ## External Mem & ENG & RUS
-OBR &amp; OBW - external cheats for CS:GO, OBR - OneByteRadar (RadarHack), OBW - OneByteWallhack (r_drawothermodels 2).
+Easy python wallhack and radarhack script for CS:GO
 
 ### Instruction
 Run .py and wait for the import of modules, after that a window will appear with a choice, 
