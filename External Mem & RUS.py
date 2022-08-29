@@ -1,3 +1,4 @@
+print('Загрузка...')
 import os
 import ctypes
 import time
@@ -6,7 +7,7 @@ import re
 import colorama
 from colorama import init, Fore
 init(autoreset=True)
-ctypes.windll.kernel32.SetConsoleTitleA("EXTERNAL MEM | By Jesewe#8563")
+ctypes.windll.kernel32.SetConsoleTitleW("EXTERNAL MEM | By Jesewe#8563")
 
 while True:
     os.system("cls")
