@@ -11,7 +11,7 @@ ctypes.windll.kernel32.SetConsoleTitleW("EXTERNAL MEM | By Jesewe#8563")
 
 while True:
     os.system("cls")
-    print(Fore.CYAN + 'Welcome to EXTERNAL MEM 1.2')
+    print(Fore.CYAN + 'Welcome to EXTERNAL MEM 1.3')
     print(Fore.WHITE + '\n1 > WallHack\n2 > RadarHack')
     try:
         choose_cheat=int(input(Fore.YELLOW + '\nPlease select a number >>> '))
