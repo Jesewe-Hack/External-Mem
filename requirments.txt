@@ -2,3 +2,5 @@ colorama
 ctypes
 pymem
 os
+requests
+webbrowser
