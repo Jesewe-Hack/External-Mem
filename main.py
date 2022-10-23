@@ -3,11 +3,38 @@ import ctypes
 import time
 import pymem
 import re
+import requests, version, webbrowser
 import colorama
 from colorama import init, Fore
 init(autoreset=True)
 
 ctypes.windll.kernel32.SetConsoleTitleW("External Memory | By Jesewe Hack")
+
+def check_version():
+    os.system('cls')
+    print(Fore.MAGENTA + '                                   Checking for updates...')
+    local_version = version.ver
+    try:
+        response = requests.get('https://raw.githubusercontent.com/Jesewe-Hack/External-Mem/main/version.py').text
+    except:
+        print(Fore.RED + '\n                                   Failed to get latest version')
+        input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
+        response = None
+
+    if response != None:
+        github_version = float(re.split('=', response.strip())[1])
+
+        if github_version > local_version:
+            print(Fore.RED + f'\n                                   Found new version: {github_version}')
+            try:
+                webbrowser.open('https://github.com/Jesewe-Hack/External-Mem/releases')
+                input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
+            except:
+                print(Fore.GREEN + '\n                                   No updates found!')
+                input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
+        else:
+            print(Fore.GREEN + '\n                                   No updates found!')
+            input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
 
 def radar():
     pm = pymem.Pymem('csgo.exe')
@@ -24,11 +51,11 @@ def radar():
 def wallhack():
     pm = pymem.Pymem('csgo.exe')
     client = pymem.process.module_from_name(pm.process_handle,
-                                        'client.dll')
+                                            'client.dll')
 
     clientModule = pm.read_bytes(client.lpBaseOfDll, client.SizeOfImage)
-    address = client.lpBaseOfDll + re.search(rb'\x83\xF8.\x8B\x45\x08\x0F',
-                                         clientModule).start() + 2
+    address = client.lpBaseOfDll + re.search(rb'\x33\xC0\x83\xFA.\xB9\x20',
+                                             clientModule).start() + 4
 
     pm.write_uchar(address, 2 if pm.read_uchar(address) == 1 else 1)
     pm.close_process()
@@ -60,9 +87,10 @@ while True:
     """ + bcolors.ENDC)
     print(bcolors.OKCYAN + """
                                     [0] Exit 
-                                    [1] WallHack
-                                    [2] RadarHack
-                                    [3] About
+                                    [1] Run WallHack
+                                    [2] Run RadarHack
+                                    [3] Check for Update
+                                    [4] About
     """ + bcolors.ENDC)
     try:
         choose_cheat=int(input(bcolors.OKBLUE + '                                   Action : '))
@@ -97,6 +125,12 @@ while True:
                 print(bcolors.OKGREEN + '\n                                   Successfully!')
                 input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
         elif choose_cheat==3:
+            try:
+                check_version()
+            except Exception as e:
+                print(bcolors.FAIL + '                                   Failed to check for update!')
+                input(bcolors.OKGREEN + '\n                                   Press Enter to return to the main menu...')
+        elif choose_cheat==4:
             print(bcolors.OKCYAN + """
                                             Use at your own risk, VAC anti-cheat does not ban 
                                             for this script! But it can ban the patrol!
