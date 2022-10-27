@@ -4,3 +4,5 @@ pymem
 os
 requests
 webbrowser
+pyqt6
+pyqt6-tools
