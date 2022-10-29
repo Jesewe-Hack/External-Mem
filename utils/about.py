@@ -7,7 +7,10 @@ def github():
 
 def website():
     webbrowser.open('https://jesewe.wixsite.com/jesewehack')
-    
+
+def twitter():
+    webbrowser.open('https://twitter.com/jesewe_offical')
+
 def about():
     Form, Window = uic.loadUiType("about.ui")
     global window
@@ -18,3 +21,4 @@ def about():
 
     form.pushButton_3.clicked.connect(website)
     form.pushButton_4.clicked.connect(github)
+    form.pushButton_5.clicked.connect(twitter)

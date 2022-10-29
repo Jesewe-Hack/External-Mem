@@ -8,19 +8,19 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>470</height>
+    <height>450</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>800</width>
-    <height>470</height>
+    <height>450</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>800</width>
-    <height>470</height>
+    <height>450</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -67,7 +67,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>100</x>
        <y>10</y>
        <width>601</width>
        <height>91</height>
@@ -92,12 +92,31 @@
       <bool>false</bool>
      </property>
     </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>90</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/info.ico</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>410</y>
+      <x>60</x>
+      <y>370</y>
       <width>221</width>
       <height>51</height>
      </rect>
@@ -141,38 +160,13 @@ QPushButton:pressed {
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>440</y>
-      <width>261</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Montserrat</family>
-      <pointsize>18</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: white</string>
-    </property>
-    <property name="text">
-     <string>© 2022 Jesewe Hack</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>130</y>
       <width>761</width>
-      <height>261</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="font">
@@ -192,7 +186,7 @@ color: white;</string>
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;External Memory - external cheat for CS:GO. The external cheat has 2 functions, a radar hack and a wall hack. Doesn't fit into the game at all! external cheat for CS:GO. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;The external cheat has 2 functions, a radar hack and a wall hack. Doesn't fit into the game at all!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Use at your own risk, VAC anti-cheat does not ban for this script! But it can ban the patrol!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;External Memory - external cheat for CS:GO. Doesn't fit into the game at all! external cheat for CS:GO. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Wallhack - enables console input on any servers. - [F5 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Radarhack - shows all entities on the radar. - [F6 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MoneyReveal - shows how much money opponents have. - [F7 key]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::AutoText</enum>
@@ -204,8 +198,8 @@ color: white;</string>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>410</y>
+      <x>290</x>
+      <y>370</y>
       <width>221</width>
       <height>51</height>
      </rect>
@@ -235,6 +229,51 @@ QPushButton:pressed {
     <property name="icon">
      <iconset>
       <normaloff>images/github.ico</normaloff>images/github.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>370</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Montserrat</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton { 
+	color: white; 
+	background-color: #fb5b5d; 
+	border-radius: 20;
+}
+
+QPushButton:pressed { 
+	background-color: #fa4244
+ }</string>
+    </property>
+    <property name="text">
+     <string>Twitter</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/twitter.ico</normaloff>images/twitter.ico</iconset>
     </property>
     <property name="iconSize">
      <size>

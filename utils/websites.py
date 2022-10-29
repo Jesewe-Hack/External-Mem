@@ -5,3 +5,6 @@ def github():
 
 def website():
 	webbrowser.open('https://jesewe.wixsite.com/jesewehack')
+
+def find_error():
+	webbrowser.open('https://github.com/Jesewe-Hack/External-Mem/issues')
