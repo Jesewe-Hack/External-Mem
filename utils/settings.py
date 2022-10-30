@@ -2,7 +2,8 @@ from utils.tempcleaner import *
 from utils.websites import *
 from utils.getUpdate import *
 
-import platform
+import platform, socket, uuid, psutil, re
+from datetime import datetime
 from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication
 
@@ -18,4 +19,4 @@ def settings():
     form.find_error.clicked.connect(find_error)
     form.check_update.clicked.connect(check_update_app)
 
-    form.label_3.setText(f'Operating system: {platform.system()}\nPlatform type: {platform.platform()}\nComputer network name: {platform.node()}\nMachine type: {platform.machine()}')
+    form.label_3.setText(f'System: {platform.system()}\nNode Name: {platform.node()}\nVersion: {platform.version()}\nMachine: {platform.machine()}\nPhysical cores: {psutil.cpu_count(logical=False)}\nTotal cores: {psutil.cpu_count(logical=True)}\n\nIP Address: {socket.gethostbyname(socket.gethostname())}')

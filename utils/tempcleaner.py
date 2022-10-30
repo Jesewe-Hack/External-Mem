@@ -1,6 +1,7 @@
 import os
 import shutil
 import psutil
+from tkinter import messagebox
 
 def temp_cleaner():  
     folder = 'C:/Users/'+os.getlogin()+'/AppData/Local/Temp'
@@ -26,3 +27,4 @@ def temp_cleaner():
 
         except Exception as e:
             print('Access Denied: %s' % itemName )
+    messagebox.showinfo("External Memory", "Temp folder cleared successfully!", icon='info')

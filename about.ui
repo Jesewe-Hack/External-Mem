@@ -186,7 +186,7 @@ color: white;</string>
      <enum>QFrame::Box</enum>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;External Memory - external cheat for CS:GO. Doesn't fit into the game at all! external cheat for CS:GO. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Wallhack - enables console input on any servers. - [F5 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Radarhack - shows all entities on the radar. - [F6 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MoneyReveal - shows how much money opponents have. - [F7 key]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;External Memory - external cheat for CS:GO. Doesn't fit into the game at all! external cheat for CS:GO. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Wallhack - enables console input on any servers. - [F4 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Radarhack - shows all entities on the radar. - [F5 key]&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MoneyReveal - shows how much money opponents have. - [F6 key]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="textFormat">
      <enum>Qt::AutoText</enum>
