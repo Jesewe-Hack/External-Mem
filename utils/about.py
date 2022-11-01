@@ -1,6 +1,4 @@
 import webbrowser
-from PyQt6 import uic
-from PyQt6.QtWidgets import QApplication
 
 def github():
     webbrowser.open('https://github.com/Jesewe-Hack')
@@ -10,15 +8,3 @@ def website():
 
 def twitter():
     webbrowser.open('https://twitter.com/jesewe_offical')
-
-def about():
-    Form, Window = uic.loadUiType("about.ui")
-    global window
-    window = Window()
-    form = Form()
-    form.setupUi(window)
-    window.show()
-
-    form.pushButton_3.clicked.connect(website)
-    form.pushButton_4.clicked.connect(github)
-    form.pushButton_5.clicked.connect(twitter)

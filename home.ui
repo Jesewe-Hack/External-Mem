@@ -282,7 +282,169 @@ QPushButton:pressed {
       <string notr="true">color: white; background-color: #fb5b5d</string>
      </property>
      <property name="text">
-      <string>Settings</string>
+      <string>External Memory</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>471</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { 
+	color: red; 
+	background-color: white; 
+	border-radius: 10;
+}
+
+QPushButton:pressed { 
+    color: white;
+	background-color:#8B0000
+ }</string>
+     </property>
+     <property name="text">
+      <string>MoneyReveal</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/money.ico</normaloff>images/money.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>28</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>471</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { 
+	color: red; 
+	background-color: white; 
+	border-radius: 10;
+}
+
+QPushButton:pressed { 
+    color: white;
+	background-color:#8B0000
+ }</string>
+     </property>
+     <property name="text">
+      <string>RadarHack</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/radar.ico</normaloff>images/radar.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>471</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { 
+	color: red; 
+	background-color: white; 
+	border-radius: 10;
+}
+
+QPushButton:pressed { 
+    color: white;
+	background-color:#8B0000
+ }</string>
+     </property>
+     <property name="text">
+      <string>WallHack</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>images/wall.ico</normaloff>images/wall.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>112</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Montserrat</family>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white</string>
+     </property>
+     <property name="text">
+      <string>Main:</string>
      </property>
     </widget>
     <widget class="QFrame" name="frame_2">
@@ -302,179 +464,6 @@ QPushButton:pressed {
      </property>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="temp_cleaner">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>100</y>
-       <width>221</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Montserrat</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton { 
-	color: red; 
-	background-color: white; 
-	border-radius: 10;
-}
-
-QPushButton:pressed { 
-    color: white;
-	background-color:#8B0000
- }</string>
-     </property>
-     <property name="text">
-      <string>Clear Temp Folder</string>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>38</width>
-       <height>38</height>
-      </size>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>230</y>
-       <width>411</width>
-       <height>191</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Montserrat</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: red; 
-background-color: white; 
-border-radius: 10;</string>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="lineWidth">
-      <number>1</number>
-     </property>
-     <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;PLATFORM:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="find_error">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>160</y>
-       <width>221</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Montserrat</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton { 
-	color: red; 
-	background-color: white; 
-	border-radius: 10;
-}
-
-QPushButton:pressed { 
-    color: white;
-	background-color:#8B0000
- }</string>
-     </property>
-     <property name="text">
-      <string>Found an error?</string>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>38</width>
-       <height>38</height>
-      </size>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="check_update">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>100</y>
-       <width>221</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Montserrat</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton { 
-	color: red; 
-	background-color: white; 
-	border-radius: 10;
-}
-
-QPushButton:pressed { 
-    color: white;
-	background-color:#8B0000
- }</string>
-     </property>
-     <property name="text">
-      <string>Check for update</string>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>38</width>
-       <height>38</height>
-      </size>
-     </property>
-     <property name="checkable">
-      <bool>true</bool>
-     </property>
-     <property name="checked">
-      <bool>false</bool>
      </property>
     </widget>
    </widget>
